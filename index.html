@@ -12,92 +12,143 @@
       background-color: #fafafa;
       margin: 0;
       padding: 2em;
-      max-width: 800px;
+      max-width: 900px;
       margin-left: auto;
       margin-right: auto;
     }
     h1, h2 {
       color: #0052cc;
     }
-    header {
+    header, footer {
       text-align: center;
+      margin: 2em 0;
+    }
+    nav {
+      text-align: right;
+      margin-bottom: 1.5em;
+    }
+    nav a {
+      color: #0052cc;
+      text-decoration: none;
+      margin-left: 1em;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
       margin-bottom: 2em;
     }
     footer {
-      text-align: center;
       font-size: 0.9em;
       color: #666;
-      margin-top: 3em;
-    }
-    a {
-      color: #0052cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
+  <script>
+    function switchLang(lang) {
+      document.getElementById('ja').style.display = lang === 'ja' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>プライバシーポリシー</h1>
-    <p><strong>TimeBoxer</strong>（運営者：SK Works）</p>
+    <h1>Privacy Policy / プライバシーポリシー</h1>
+    <p><strong>TimeBoxer</strong> — SK Works</p>
   </header>
 
-  <h2>第1条（総則）</h2>
-  <p>
-    本プライバシーポリシーは、アプリ「TimeBoxer」（以下「本アプリ」といいます）において、
-    SK Works（以下「当方」といいます）が提供するサービスに関し、
-    ユーザーの個人情報および利用情報の取扱い方針を定めるものです。
-  </p>
+  <nav>
+    <a href="#" onclick="switchLang('ja')">日本語</a>
+    <a href="#" onclick="switchLang('en')">English</a>
+  </nav>
 
-  <h2>第2条（取得する情報）</h2>
-  <ul>
-    <li>ユーザーが入力または送信する情報（メールアドレス、ニックネームなど）</li>
-    <li>利用端末情報（端末モデル、OSバージョン、アプリバージョンなど）</li>
-    <li>利用状況情報（アクセス日時、機能利用履歴、エラー発生状況など）</li>
-    <li>広告配信・分析のために第三者が自動取得する情報（広告ID、IPアドレスなど）</li>
-  </ul>
+  <section id="ja">
+    <h2>第1条（総則）</h2>
+    <p>本プライバシーポリシーは、アプリ「TimeBoxer」（以下「本アプリ」といいます）において、SK Works（以下「当方」といいます）が提供するサービスに関し、ユーザーの個人情報および利用情報の取扱い方針を定めるものです。</p>
 
-  <h2>第3条（情報の利用目的）</h2>
-  <ol>
-    <li>本アプリの提供・運営・改善のため</li>
-    <li>ユーザーからの問い合わせ対応のため</li>
-    <li>不正利用防止・トラブル対応のため</li>
-    <li>広告や分析によるサービス品質向上のため</li>
-    <li>その他、ユーザーに有益と思われる情報提供のため</li>
-  </ol>
+    <h2>第2条（取得する情報）</h2>
+    <ul>
+      <li>ユーザーが入力または送信する情報（メールアドレス、ニックネームなど）</li>
+      <li>利用端末情報（端末モデル、OSバージョン、アプリバージョンなど）</li>
+      <li>利用状況情報（アクセス日時、機能利用履歴、エラー発生状況など）</li>
+      <li>広告配信・分析のために第三者が自動取得する情報（広告ID、IPアドレスなど）</li>
+    </ul>
 
-  <h2>第4条（第三者提供）</h2>
-  <p>
-    当方は、法令に基づく場合を除き、ユーザーの同意なく個人情報を第三者に提供することはありません。
-    ただし、以下の外部サービスを利用する場合があります：
-  </p>
-  <ul>
-    <li>Firebase（Google LLC）</li>
-    <li>Google Analytics for Firebase（Google LLC）</li>
-    <li>AdMob（Google LLC）</li>
-  </ul>
-  <p>これらサービスのデータ取扱いについては、各社のプライバシーポリシーをご確認ください。</p>
+    <h2>第3条（情報の利用目的）</h2>
+    <ol>
+      <li>本アプリの提供・運営・改善のため</li>
+      <li>ユーザーからの問い合わせ対応のため</li>
+      <li>不正利用防止・トラブル対応のため</li>
+      <li>広告や分析によるサービス品質向上のため</li>
+      <li>その他、ユーザーに有益と思われる情報提供のため</li>
+    </ol>
 
-  <h2>第5条（情報の管理）</h2>
-  <p>当方は、取得した情報を安全に管理し、不正アクセス・改ざん・漏えいを防ぐため適切なセキュリティ対策を講じます。</p>
+    <h2>第4条（第三者提供）</h2>
+    <p>当方は、法令に基づく場合を除き、ユーザーの同意なく個人情報を第三者に提供することはありません。ただし、以下の外部サービスを利用する場合があります：</p>
+    <ul>
+      <li>Firebase（Google LLC）</li>
+      <li>Google Analytics for Firebase（Google LLC）</li>
+      <li>AdMob（Google LLC）</li>
+    </ul>
 
-  <h2>第6条（プライバシーポリシーの変更）</h2>
-  <p>
-    当方は、必要に応じて本ポリシーの内容を予告なく変更することがあります。
-    変更後は、本ページに掲載された時点で効力を生じます。
-  </p>
+    <h2>第5条（情報の管理）</h2>
+    <p>当方は、取得した情報を安全に管理し、不正アクセス・改ざん・漏えいを防ぐため適切なセキュリティ対策を講じます。</p>
 
-  <h2>第7条（お問い合わせ窓口）</h2>
-  <p>
-    本ポリシーに関するお問い合わせは、以下までご連絡ください：<br />
-    📧 <a href="mailto:skworks.apps@gmail.com">skworks.apps@gmail.com</a>
-  </p>
+    <h2>第6条（プライバシーポリシーの変更）</h2>
+    <p>当方は、必要に応じて本ポリシーの内容を予告なく変更することがあります。変更後は、本ページに掲載された時点で効力を生じます。</p>
 
-  <footer>
-    <p>© 2025 SK Works. All Rights Reserved.</p>
-    <p>最終更新日：2025年10月15日</p>
-  </footer>
+    <h2>第7条（お問い合わせ窓口）</h2>
+    <p>本ポリシーに関するお問い合わせは、以下までご連絡ください。<br>📧 <a href="mailto:skworks.apps@gmail.com">skworks.apps@gmail.com</a></p>
+
+    <footer>
+      <p>© 2025 SK Works. All Rights Reserved.</p>
+      <p>最終更新日：2025年10月15日</p>
+    </footer>
+  </section>
+
+  <section id="en" style="display:none">
+    <h2>Article 1 (General)</h2>
+    <p>This Privacy Policy explains how SK Works ("we", "our", or "us") handles personal and usage information in the mobile application "TimeBoxer" (the "App").</p>
+
+    <h2>Article 2 (Information We Collect)</h2>
+    <ul>
+      <li>Information entered or submitted by users (e.g., email address, nickname)</li>
+      <li>Device information (model, OS version, app version, etc.)</li>
+      <li>Usage data (access time, feature usage history, error logs, etc.)</li>
+      <li>Automatically collected data for advertising or analytics (Ad ID, IP address, etc.)</li>
+    </ul>
+
+    <h2>Article 3 (Purpose of Use)</h2>
+    <ol>
+      <li>To provide, operate, and improve the App</li>
+      <li>To respond to user inquiries</li>
+      <li>To prevent fraudulent use and handle technical issues</li>
+      <li>To improve quality through analytics and ads</li>
+      <li>To provide useful information to users</li>
+    </ol>
+
+    <h2>Article 4 (Third-Party Services)</h2>
+    <p>We may use third-party services for app analytics and advertising, including but not limited to:</p>
+    <ul>
+      <li>Firebase (Google LLC)</li>
+      <li>Google Analytics for Firebase (Google LLC)</li>
+      <li>AdMob (Google LLC)</li>
+    </ul>
+    <p>Data collected by these services are handled according to their respective privacy policies.</p>
+
+    <h2>Article 5 (Data Security)</h2>
+    <p>We take appropriate security measures to protect collected data from unauthorized access, alteration, or leakage.</p>
+
+    <h2>Article 6 (Policy Changes)</h2>
+    <p>This Privacy Policy may be updated without prior notice. Changes will take effect when posted on this page.</p>
+
+    <h2>Article 7 (Contact)</h2>
+    <p>If you have any questions about this policy, please contact us at:<br>📧 <a href="mailto:skworks.apps@gmail.com">skworks.apps@gmail.com</a></p>
+
+    <footer>
+      <p>© 2025 SK Works. All Rights Reserved.</p>
+      <p>Last Updated: October 15, 2025</p>
+    </footer>
+  </section>
 </body>
 </html>
